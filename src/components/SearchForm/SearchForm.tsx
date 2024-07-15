@@ -5,7 +5,7 @@ import './SearchForm.css';
 export function SearchForm() {
 	return (
 		<form className='search-form'>
-			<Input placeholder='Pesquise um serviço' name='search' />
+			<Input type='text' placeholder='Pesquise um serviço' name='search' />
 			<Button type='submit' variant='secundary'>
 				Pesquisar
 			</Button>
