@@ -1,0 +1,41 @@
+.cover {
+	width: 100%;
+	max-width: 700px;
+	padding: 32px 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin: 0 auto;
+}
+
+.cover__badge {
+	@apply bg-secundary-600/20 text-secundary-500;
+	border-radius: 9999px;
+	padding: 4px 16px;
+}
+
+.cover__heading {
+	@apply text-6xl text-zinc-800;
+	text-align: center;
+}
+
+.cover__heading-highlight {
+	@apply text-primary-800;
+}
+
+.cover__text {
+	@apply text-base text-neutral-600;
+	text-align: center;
+	margin-top: 16px;
+}
+
+@media (max-width: 640px) {
+	.cover__heading {
+		@apply text-4xl;
+	}
+	.cover__text {
+		margin-top: 0px;
+	}
+}

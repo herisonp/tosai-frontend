@@ -1,0 +1,52 @@
+.card {
+	@apply bg-white/60 shadow-sm;
+	border-radius: 8px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	height: 190px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: all 0.2s ease;
+}
+.card:hover {
+	@apply bg-white border-primary-300;
+}
+
+.card__image {
+	@apply bg-zinc-950;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.card__info {
+	padding: 16px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.card__title {
+	@apply text-base text-zinc-800 font-bold;
+}
+
+.card__description {
+	@apply text-xs text-neutral-600;
+}
+
+.card__price-group {
+	display: flex;
+	align-items: baseline;
+	margin-top: auto;
+	gap: 4px;
+}
+
+.card__price {
+	@apply text-sm text-primary-600 font-bold;
+}
+
+.card__full-price {
+	@apply text-xs text-secundary-300;
+	text-decoration: line-through;
+}

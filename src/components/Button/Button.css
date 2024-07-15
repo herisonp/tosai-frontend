@@ -1,0 +1,36 @@
+.button {
+	@apply text-base text-white;
+	width: fit-content;
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	cursor: pointer;
+	padding: 8px 16px;
+	transition: all 0.1s ease;
+}
+
+.button_primary {
+	@apply bg-primary-800 text-white;
+	border: 1px solid transparent;
+}
+.button_primary:hover {
+	@apply bg-white text-primary-600 border-primary-600;
+}
+
+.button_secundary {
+	@apply bg-secundary-600 text-white;
+	border: 1px solid transparent;
+}
+.button_secundary:hover {
+	@apply bg-white text-secundary-600 border-secundary-600;
+}
+
+.button_ghost {
+	@apply text-primary-600 bg-transparent;
+	padding: 2px 4px;
+}
+.button_ghost:hover {
+	@apply text-primary-400;
+}

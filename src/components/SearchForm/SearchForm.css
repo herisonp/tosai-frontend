@@ -1,0 +1,9 @@
+.search-form {
+	@apply bg-white shadow-sm;
+	border-radius: 16px;
+	width: 100%;
+	display: flex;
+	padding: 16px;
+	gap: 16px;
+	margin-top: 16px;
+}

@@ -1,0 +1,15 @@
+.input {
+	@apply bg-primary-500/15 text-primary-600;
+	border-radius: 8px;
+	padding: 16px;
+	width: 100%;
+	border: solid 1px transparent;
+	outline: none;
+	transition: all 0.1s ease;
+}
+.input::placeholder {
+	@apply text-primary-500;
+}
+.input:focus {
+	@apply border-primary-500;
+}
