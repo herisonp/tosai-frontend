@@ -11,15 +11,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-	children
+	children,
+	modal
 }: Readonly<{
 	children: React.ReactNode;
+	modal: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='pt-BR'>
 			<body className={inter.className}>
+				{modal}
 				<Header />
 				<main className='main'>{children}</main>
+				<div id='modal-root' />
 			</body>
 		</html>
 	);
