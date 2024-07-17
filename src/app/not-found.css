@@ -1,0 +1,21 @@
+.not-found {
+	width: 100%;
+	max-width: 550px;
+	margin: 0 auto;
+	display: flex;
+	padding: 16px;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	margin-top: 32px;
+}
+
+.not-found__title {
+	@apply text-3xl text-zinc-800;
+	text-align: center;
+}
+
+.not-found__text {
+	@apply text-base text-neutral-600;
+	text-align: center;
+}
