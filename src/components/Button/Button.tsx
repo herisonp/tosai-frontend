@@ -1,11 +1,11 @@
 'use client';
-import type { ButtonHTMLAttributes } from 'react';
+import type { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 import './Button.css';
+import Link, { LinkProps } from 'next/link';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: 'primary' | 'secundary' | 'ghost';
 }
-
 export function Button({
 	children,
 	variant = 'primary',
