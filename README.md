@@ -3,7 +3,7 @@
 ### Links - Acesso rápido
 
 - 🎨 <a href="https://www.figma.com/design/Wbf1jA3TfmbtoGNo0OZoSS/%5BTRIPLETEN%5D-Projeto-Final?node-id=0-1&t=BQGgege4Hg1hkTJ9-1">Protótipo Figma</a>
-- 🌐 <a href="https://tosai.com.br">Deploy / Ver online</a>
+- 🌐 <a href="https://devtosaibr.vercel.app">Deploy / Ver online</a>
 
 <div>
   <img alt="Thumbnail Tosaí" src=".github/thumbnail.jpg" width="100%">
