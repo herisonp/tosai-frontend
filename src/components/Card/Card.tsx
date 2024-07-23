@@ -8,9 +8,9 @@ import { limitedChar } from "@/utils/limitedChar";
 import "./Card.css";
 
 export function Card({ card }: { card: Services }) {
-  const { WHATSAPP_PHONE } = process.env;
+  const { NEXT_PUBLIC_WHATSAPP_PHONE } = process.env;
   const message = `[ SIMULAÇÃO ]%0AVim do site Tosaí. Quero saber mais sobre o serviço ${card.title}.`;
-  const whatsAppLink = `https://wa.me/${WHATSAPP_PHONE}?text=${message}`;
+  const whatsAppLink = `https://wa.me/${NEXT_PUBLIC_WHATSAPP_PHONE}?text=${message}`;
   return (
     <li className="card">
       <Link className="card__link" href={whatsAppLink} target="_blank">
