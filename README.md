@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tosaí - Serviços de banho e tosa
+
+### Links - Acesso rápido
+
+- 🎨 <a href="https://www.figma.com/design/Wbf1jA3TfmbtoGNo0OZoSS/%5BTRIPLETEN%5D-Projeto-Final?node-id=0-1&t=BQGgege4Hg1hkTJ9-1">Protótipo Figma</a>
+- 🌐 <a href="https://devtosaibr.vercel.app">Deploy / Ver online</a>
+
+<div>
+  <img alt="Thumbnail Tosaí" src=".github/thumbnail.jpg" width="100%">
+</div>
+
+## Sobre o projeto
+
+Tosaí é um projeto idealizado e desenvolvido por mim (Herison Pereira), como projeto final de conclusão do curso de desenvolvimento web do bootcamp da TripleTen. O principal objetivo era a criação de uma aplicação front-end, que utilizasse das principais ferramentas que aprendemos durante toda a jornada. Como metodologia BEM, HTML, CSS, JavaScript, React, consumo de API REST de terceiros, entre outros.
+
+### Stack
+
+Para atender ao requisito de consumo de API de terceiros, utilizei Supabase, onde ele cria uma API REST automatica para cada tabela criada no banco de dados.
+
+Além disso, fiz uso de ferramentas e tecnologias como:
+
+- Figma para desenhar todo layout
+- HTML, CSS e muito JavaScript
+- React com Next.js
+- Suspense API do React
+- Metodologia BEM
+- Tailwindcss
+
+### Melhorias
+
+Algumas melhorias possíveis para o futuro:
+
+- Login e registro de usuário
+- Agendamento online
+- Cadastro dos pets
+- Checkout com pagamento online
+- Área de administração para o Petshop
 
 ## Getting Started
 
-First, run the development server:
+Primeiro instale todas as depedências com:
+
+```bash
+npm install
+```
+
+Duplique o arquivo `.env.exemple`, renomei para apenas `.env.local` e insira os respectivos valores de cada variável.
+
+> Nota: `BASE_URL` e `SUPABASE_CLIENT_ANON_KEY` são variaveis referentes a API REST do Supabase. Para funcionar corretamente na aplicação, você precisa criar um projeto no Supabase e ter uma tabela pública com as seguintes colunas: id, title, description, full_price, current_price e image.
+
+Em seguinda, inicie o ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Por padrão, o servidor será executado na porta 3000, ficando disponível no endereço local de http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Para iniciar o servidor em modo de produção, primeiro execute:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Se tudo deu certo, e não tiver nenhum aviso de erro, você pode iniciar o servidor de produção com:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Novamente a porta padrão é a de 3000. Você pode alterar a porta de acordo com a documentação do Next.js, aqui: https://nextjs.org/docs/app/api-reference/next-cli#production
